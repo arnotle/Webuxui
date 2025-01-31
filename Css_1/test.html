@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="product1" class="modal" style="display: none;">
+        <div class="modal-bg" onclick="closeModal('product1')"></div>
+        <div class="modal-page">
+            <button class="close-btn" onclick="closeModal('product1')">Close</button>
+            <h2>รายละเอียด</h2>
+            <div class="modaldesc-content">
+                <img class="modaldesc-img" src="img/รวง1.png" alt="">
+                <div class="modaldesc-detail">
+                    <h4>ชื่อสินค้า</h4>
+                    <p>ISEKI HF570G</p>
+                    <h4>กำลังเครื่องยนต์</h4>
+                    <p>60 แรงม้า</p>
+                    <h4>ราคา</h4>
+                    <p>ราคามือสองอยู่ที่ 50,000-200,000 บาท</p>
+                    <br>
+                    <p>(กำลังหาข้อมูลรถจากต่างประเทศ)Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ullam soluta praesentium explicabo architecto rem totam deserunt tempora sed, sint, minus, ex similique! Corrupti, quod nam? Recusandae doloremque, omnis molestias, nam asperiores ab corrupti tenetur dolor, odit tempore pariatur quod?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .modal-page {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+        }
+    
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    
+        .modaldesc-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .modaldesc-img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .modaldesc-detail {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

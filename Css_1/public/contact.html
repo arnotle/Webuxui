@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/contact.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7e9da;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d4b89d;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-button {
+    padding: 10px;
+    background-color: #d4b89d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    transition: 0.3s;
+}
+.contact-button:hover{
+    background: #6b6365;
+    color: white;   
+}
+
+.contact-info {
+    /*display: flex;*/
+    flex-direction: column;
+    /*justify-content: center;*/
+    padding: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.logout-container {
+    text-align: center;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4b4b; /* สีพื้นหลังปุ่ม */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff1c1c; /* สีเมื่อ hover */
+}
+</style>
+
+
+<body>
+    <header>
+        <div class="logo">Combine harvest</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">เกี่ยวกับ</a>
+            <a href="#">ข้อมูลรถเกี่ยวข้าว</a>
+            <a href="#" class="active">ติดต่อ</a>
+        </nav>
+        <div class="logout-container">
+            <a href="login.html" class="logout-button">Logout</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contact-section">
+            <h1 class="contact-T">ติดต่อ</h1>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="message">
+                    <button class="contact-button">Send</button>
+                </form>
+                <div class="contact-info">
+                    <p><h4>District Maeka Payao, Thailand</h4></p>
+                    <p><h4>📞 +66 098765432</h4></p>
+                    <p><h4>✉️ CombineHarverter@gmail.com</h4></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
